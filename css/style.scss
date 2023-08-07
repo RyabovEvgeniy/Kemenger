@@ -1,0 +1,97 @@
+[class*="__container"] {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+// Colors
+$greenColor: #018fa3;
+$lightgreenColor: #4eca30;
+$violetColor: #955eea;
+$yellowColor: #ffe41b;
+$orangeColor: #ffa724;
+$pinkColor: #ff4d94;
+$whiteColor: #fff;
+$blackColor: #000;
+
+// Botton
+.btn {
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 30px;
+	background: #fae01a;
+	box-shadow: 0px 20px 40px -27px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	padding: 19px 43px 21px 45px;
+}
+
+body {
+	font-family: "Commissioner", sans-serif;
+	color: $blackColor;
+	font-size: 24px;
+	line-height: 1.25;
+}
+
+// header
+
+.header {
+
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__inner
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+
+	// .header__menu
+
+	&__menu {
+	}
+}
+.logo {
+}
+.nav {
+}
+.menu {
+	display: flex;
+	gap: 40px;
+
+	// .menu__item
+
+	&__item {
+	}
+
+	// .menu__link
+
+	&__link {
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+.phone {
+
+	// .phone__link
+
+	&__link {
+		position: relative;
+		padding-left: 50px;
+		font-size: 18px;
+		font-weight: 600;
+		&::before {
+			position: absolute;
+			content: url(../img/phone-img.svg);
+			top: -10px;
+			left: 0;
+			height: 40px;
+			width: 40px;
+		}
+	}
+}
+
