@@ -108,3 +108,104 @@ body {
   font-size: 59px;
   color: #018fa3;
 }
+
+.about {
+  padding-top: 127px;
+}
+.about__top {
+  margin-bottom: 115px;
+}
+.top-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.top-about__content {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-left: 100px;
+  position: relative;
+}
+.top-about__content::before {
+  position: absolute;
+  content: url(../img/top-about-decor.svg);
+  top: -76px;
+  left: 41px;
+  z-index: -1;
+}
+.top-about__text {
+  max-width: 460px;
+  position: relative;
+}
+.top-about__text::after {
+  content: "";
+  position: absolute;
+  left: 48px;
+  top: -24px;
+  width: 440px;
+  height: 204px;
+  border-radius: 30px;
+  background-color: #FFF7BE;
+  z-index: -1;
+}
+.top-about__image {
+  border-radius: 30px;
+  position: relative;
+}
+.top-about__image::after {
+  position: absolute;
+  content: url(../img/about-dotted.png);
+  left: 33px;
+  top: 33px;
+  z-index: -1;
+}
+.bottom-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bottom-about__content {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-right: 132px;
+  position: relative;
+}
+.bottom-about__content::before {
+  position: absolute;
+  content: url(../img/bottom-about-decor.svg);
+  bottom: -45px;
+  right: 35px;
+  z-index: -1;
+}
+.bottom-about__text {
+  max-width: 460px;
+  position: relative;
+}
+.bottom-about__text::after {
+  content: "";
+  position: absolute;
+  left: 48px;
+  top: -24px;
+  width: 440px;
+  height: 172px;
+  border-radius: 30px;
+  background-color: #FFF7BE;
+  z-index: -1;
+}
+.bottom-about__image {
+  border-radius: 30px;
+  position: relative;
+}
+.bottom-about__image::after {
+  position: absolute;
+  content: url(../img/about-dotted.png);
+  left: -33px;
+  top: 33px;
+  z-index: -1;
+}
