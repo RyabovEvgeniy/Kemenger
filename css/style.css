@@ -1,3 +1,4 @@
+@charset "UTF-8";
 [class*=__container] {
   max-width: 1220px;
   margin: 0 auto;
@@ -148,7 +149,7 @@ body {
   width: 440px;
   height: 204px;
   border-radius: 30px;
-  background-color: #FFF7BE;
+  background-color: #fff7be;
   z-index: -1;
 }
 .top-about__image {
@@ -195,7 +196,7 @@ body {
   width: 440px;
   height: 172px;
   border-radius: 30px;
-  background-color: #FFF7BE;
+  background-color: #fff7be;
   z-index: -1;
 }
 .bottom-about__image {
@@ -326,4 +327,185 @@ body {
 .bottom-desc__text {
   max-width: 140px;
   text-align: center;
+}
+
+.catalog {
+  padding: 68px 0 80px;
+  background-color: #f6faff;
+  text-align: center;
+}
+.catalog__titile {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 68px;
+}
+.catalog__slider {
+  position: relative;
+}
+.catalog__slider::before {
+  position: absolute;
+  content: url(../img/catalog-decor1.svg);
+  left: -48px;
+  top: 0;
+}
+.catalog__slider::after {
+  position: absolute;
+  content: url(../img/catalog-decor2.svg);
+  right: 59px;
+  top: -59px;
+}
+
+.slider {
+  z-index: 1;
+  position: relative;
+  min-width: 0;
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+}
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -25px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 24px;
+  height: 60px;
+  cursor: pointer;
+}
+.slider .slick-arrow.slick-prev {
+  left: -48px;
+  background: url("../img/slider-arrow-left.svg") 0 0/100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: -48px;
+  background: url("../img/slider-arrow-right.svg") 0 0/100% no-repeat;
+}
+.slider__item {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 387px;
+          flex: 0 1 387px;
+  min-height: 778px;
+}
+
+.item-slider {
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
+          box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 60px;
+}
+.item-slider__title {
+  padding: 26px 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+.item-slider__title_green {
+  background-color: #018fa3;
+}
+.item-slider__title_violet {
+  background-color: #955eea;
+}
+.item-slider__title_lightgreen {
+  background-color: #4eca30;
+}
+.item-slider__title_yellow {
+  background-color: #ffe41b;
+}
+.item-slider__title_pink {
+  background-color: #ff4d94;
+}
+.item-slider__title_orange {
+  background-color: #ffa724;
+}
+.item-slider__body {
+  padding: 60px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.item-slider__value {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.item-slider__age {
+  margin-bottom: 8px;
+}
+.item-slider__desc {
+  margin-bottom: 48px;
+}
+.item-slider__list {
+  margin-bottom: 60px;
+}
+.item-slider__btn {
+  display: inline-block;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: end;
+}
+.item-slider__btn_green {
+  background-color: #018fa3;
+}
+.item-slider__btn_violet {
+  background-color: #955eea;
+}
+.item-slider__btn_lightgreen {
+  background-color: #4eca30;
+}
+.item-slider__btn_yellow {
+  background-color: #ffe41b;
+}
+.item-slider__btn_pink {
+  background-color: #ff4d94;
+}
+.item-slider__btn_orange {
+  background-color: #ffa724;
+}
+
+.list-item-slider__item {
+  padding: 12px 0;
+  border-bottom: 1px solid transparent;
+  -o-border-image: url(../img/list-item-decor.png) 50 round round;
+     border-image: url(../img/list-item-decor.png) 50 round round;
+}
+.list-item-slider__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.list-item-slider__item_nowrap {
+  white-space: nowrap;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.show-more {
+  color: #018fa3;
+  cursor: pointer;
 }

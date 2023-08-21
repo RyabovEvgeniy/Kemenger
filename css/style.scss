@@ -78,7 +78,6 @@ body {
 	}
 }
 .phone {
-
 	// .phone__link
 
 	&__link {
@@ -100,7 +99,7 @@ body {
 // mektebi
 .mektebi {
 	padding: 264px 0 212px;
-	background: url('../img/mektebi-bg2.png') right top no-repeat, url('../img/mektebi-bg.png') 0 0 no-repeat;
+	background: url("../img/mektebi-bg2.png") right top no-repeat, url("../img/mektebi-bg.png") 0 0 no-repeat;
 
 	// .mektebi__container
 
@@ -178,18 +177,18 @@ body {
 	&__top {
 		margin-bottom: 115px;
 	}
-	
+
 	// .about__bottom
-	
+
 	&__bottom {
 	}
 }
 .top-about {
 	display: flex;
 	justify-content: space-between;
-	
+
 	// .top-about__content
-	
+
 	&__content {
 		align-self: center;
 		padding-left: 100px;
@@ -202,9 +201,9 @@ body {
 			z-index: -1;
 		}
 	}
-	
+
 	// .top-about__text
-	
+
 	&__text {
 		max-width: 460px;
 		position: relative;
@@ -216,7 +215,7 @@ body {
 			width: 440px;
 			height: 204px;
 			border-radius: 30px;
-			background-color: #FFF7BE;
+			background-color: #fff7be;
 			z-index: -1;
 		}
 	}
@@ -272,7 +271,7 @@ body {
 			width: 440px;
 			height: 172px;
 			border-radius: 30px;
-			background-color: #FFF7BE;
+			background-color: #fff7be;
 			z-index: -1;
 		}
 	}
@@ -319,7 +318,7 @@ body {
 		position: absolute;
 		top: 45%;
 		left: 45%;
-		transform: translate(-35%,-60%);
+		transform: translate(-35%, -60%);
 		display: flex;
 		flex-direction: column;
 	}
@@ -412,7 +411,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		&_bottom{
+		&_bottom {
 			padding-top: 92px;
 		}
 	}
@@ -428,5 +427,209 @@ body {
 		max-width: 140px;
 		text-align: center;
 	}
+}
+
+// catalog
+.catalog {
+	padding: 68px 0 80px;
+	background-color: #f6faff;
+	text-align: center;
+
+	// .catalog__container
+
+	&__container {
+	}
+
+	// .catalog__titile
+
+	&__titile {
+		font-size: 48px;
+		font-weight: 600;
+		margin-bottom: 68px;
+	}
+
+	// .catalog__slider
+
+	&__slider {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: url(../img/catalog-decor1.svg);
+			left: -48px;
+			top: 0;
+		}
+		&::after {
+			position: absolute;
+			content: url(../img/catalog-decor2.svg);
+			right: 59px;
+			top: -59px;
+		}
+	}
+}
+.slider {
+	z-index: 1;
+	position: relative;
+	min-width: 0;
+
+	/* Стрелка */
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin: -25px 0px 0px 0px;
+		z-index: 10;
+		font-size: 0;
+		width: 24px;
+		height: 60px;
+		cursor: pointer;
+	}
+
+	/* Стрелка влево */
+	.slick-arrow.slick-prev {
+		left: -48px;
+		background: url("../img/slider-arrow-left.svg") 0 0 / 100% no-repeat;
+	}
+
+	/* Стрелка вправо */
+	.slick-arrow.slick-next {
+		right: -48px;
+		background: url("../img/slider-arrow-right.svg") 0 0 / 100% no-repeat;
+	}
+
+	// .slider__item
+
+	&__item {
+		position: relative;
+		flex: 0 1 387px;
+		min-height: 778px;
+	}
+}
+
+.item-slider {
+	background-color: $whiteColor;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 60px;
+
+
+	// .item-slider__title
+
+	&__title {
+		padding: 26px 5px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $whiteColor;
+		&_green {
+			background-color: $greenColor;
+		}
+		&_violet {
+			background-color: $violetColor;
+		}
+		&_lightgreen {
+			background-color: $lightgreenColor;
+		}
+		&_yellow {
+			background-color: $yellowColor;
+		}
+		&_pink {
+			background-color: $pinkColor;
+		}
+		&_orange {
+			background-color: $orangeColor;
+		}
+	}
+
+	// .item-slider__body
+
+	&__body {
+		padding: 60px 5px;
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+	}
+
+	// .item-slider__value
+
+	&__value {
+		font-size: 48px;
+		font-weight: 600;
+		margin-bottom: 24px;
+	}
+
+	// .item-slider__age
+
+	&__age {
+		margin-bottom: 8px;
+	}
+
+	// .item-slider__desc
+
+	&__desc {
+		margin-bottom: 48px;
+	}
+
+	// .item-slider__list
+
+	&__list {
+		margin-bottom: 60px;
+
+	}
+
+	// .item-slider__btn
+
+	&__btn {
+		display: inline-block;
+		text-transform: capitalize;
+		align-self: center;
+		justify-self: end;
+		&_green {
+			background-color: $greenColor;
+		}
+		&_violet {
+			background-color: $violetColor;
+		}
+		&_lightgreen {
+			background-color: $lightgreenColor;
+		}
+		&_yellow {
+			background-color: $yellowColor;
+		}
+		&_pink {
+			background-color: $pinkColor;
+		}
+		&_orange {
+			background-color: $orangeColor;
+		}
+	}
+}
+.list-item-slider {
+	&__item {
+		padding: 12px 0;
+		border-bottom: 1px solid transparent;
+		border-image: url(../img/list-item-decor.png) 50 round round;
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+		&_nowrap {
+			white-space: nowrap;
+		}
+	}
+}
+
+// Ограничивающая оболочка
+.slick-list {
+	overflow: hidden;
+}
+// Лента слайдов
+.slick-track{
+	display: flex;
+	gap: 20px;
+}
+
+.show-more {
+	color: $greenColor;
+	cursor: pointer;
 }
 
