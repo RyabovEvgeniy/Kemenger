@@ -598,3 +598,77 @@ body {
 .item-reviews__text {
   font-size: 20px;
 }
+
+.contacts {
+  padding: 80px 0 87px;
+}
+.contacts__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 112px;
+     -moz-column-gap: 112px;
+          column-gap: 112px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 57px;
+}
+.contacts__content {
+  background-color: #018fa3;
+  color: #fff;
+  padding: 12px 41px 38px 42px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 50px 50px -27px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 50px 50px -27px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.contacts__content::before {
+  position: absolute;
+  content: url(../img/contacts-decor1.svg);
+  top: -43px;
+  left: 34px;
+  z-index: -1;
+}
+.contacts__title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contacts__list dt {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.contacts__list dd {
+  margin-bottom: 20px;
+}
+.contacts__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-contacts__image {
+  position: relative;
+}
+.bottom-contacts__image::before {
+  position: absolute;
+  content: url(../img/contacts-decor2.svg);
+  top: 58px;
+  left: -86px;
+  z-index: -1;
+}
+.bottom-contacts__image::after {
+  position: absolute;
+  content: url(../img/contacts-decor3.svg);
+  bottom: 44px;
+  right: -58px;
+  z-index: -1;
+}
