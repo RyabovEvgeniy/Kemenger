@@ -509,3 +509,40 @@ body {
   color: #018fa3;
   cursor: pointer;
 }
+
+.certificate {
+  padding: 60px 0;
+  position: relative;
+}
+.certificate::before {
+  position: absolute;
+  content: url(..//img/certificate-decor1.svg);
+  top: 68зч;
+  left: 0;
+}
+.certificate__title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.certificate__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.certificate__list::after {
+  position: absolute;
+  content: url(..//img/certificate-decor2.svg);
+  bottom: -42px;
+  right: -35px;
+  z-index: -1;
+}

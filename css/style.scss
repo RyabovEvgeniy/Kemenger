@@ -633,3 +633,60 @@ body {
 	cursor: pointer;
 }
 
+// certificate
+.certificate {
+	padding: 60px 0;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: url(..//img/certificate-decor1.svg);
+		top: 68зч;
+		left: 0;
+	}
+	
+
+	// .certificate__container
+
+	&__container {
+	}
+
+	// .certificate__title
+
+	&__title {
+		font-size: 48px;
+		font-weight: 600;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	// .certificate__list
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 10;
+		&::after {
+			position: absolute;
+			content: url(..//img/certificate-decor2.svg);
+			bottom: -42px;
+			right: -35px;
+			z-index: -1;
+		}
+	}
+}
+.list-certificate {
+
+	// .list-certificate__item
+
+	&__item {
+	}
+
+	// .list-certificate__img
+
+	&__img {
+	}
+}
+
+
