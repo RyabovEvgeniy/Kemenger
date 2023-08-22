@@ -851,3 +851,28 @@ body {
 		}
 	}
 }
+
+// footer
+.footer {
+	background-color: #0A2530;
+	padding: 56px 0;
+	color: $whiteColor;
+
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .footer__img
+
+	&__img {
+	}
+}
